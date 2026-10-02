@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Him Classes – Makes You Extraordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="notesand worksheet.css">
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <div class="nav-logo">
+        <span class="logo-icon"><img src="IMG_20251217_131036.png" alt="logo"></span>
+      </div>
+      <div class="nav-title">
+        <span class="brand-him">HIM</span>
+        <span class="brand-classes">CLASSES</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#boards" class="nav-link">Boards</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+       <li><a href="#notes" class="nav-link active">Notes</a></li>
+      <li><a href="#about" class="nav-link">About Us</a></li>
+      <li><a href="https://wa.me/917607404756?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20coaching%20classes." class="nav-link nav-cta">Enquire Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!--  HERO  -->
+  <section class="hero" id="home">
+    <div class="hero-stickers">
+      <span class="sticker s1">✏️</span>
+      <span class="sticker s2">🎓</span>
+      <span class="sticker s3">🔬</span>
+      <span class="sticker s4">📐</span>
+      <span class="sticker s5">🏆</span>
+      <span class="sticker s6">💡</span>
+      <span class="sticker s7">📖</span>
+      <span class="sticker s8">⭐</span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline">Welcome to</p>
+      <h1 class="hero-title">
+        <span class="title-him">HIM</span>
+        <span class="title-classes">CLASSES</span>
+      </h1>
+      <p class="hero-sub">Makes You <span class="highlight-text">Extraordinary</span></p>
+      <p class="hero-desc">
+        Premier coaching institute in RAEBARELI offering comprehensive education across all boards — from foundation to senior secondary.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">1500+</span>
+          <span class="stat-label">Students</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Boards</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Pass Rate</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#boards" class="btn-primary">Explore Boards</a>
+        <a href="#about" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-float">
+        <div class="float-card fc1">
+          <span>🏅</span>
+          <p>Top Results</p>
+        </div>
+        <div class="float-card fc2">
+          <span>📊</span>
+          <p>Expert Faculty</p>
+        </div>
+        <div class="float-card fc3">
+          <span>🎯</span>
+          <p>Admission Open</p>
+        </div>
+      </div>
+      <div class="hero-blob"></div>
+    </div>
+    <div class="admission-banner">
+      <span class="banner-star">★</span>
+      <span>ADMISSIONS NOW OPEN FOR 2026-27</span>
+      <span class="banner-star">★</span>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSelGHpKWDQW86K_dzuB7WPL6eV3ITxPHIKdGvUb7zLATzG58w/viewform?usp=publish-editor" class="banner-link" target="_blank">Apply Now →</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!--  BOARDS SECTION  -->
+  <section class="boards-section" id="boards">
+    <div class="section-header">
+      <span class="section-eyebrow">🎓 Choose Your Path</span>
+      <h2 class="section-title">Select Your <span class="highlight">Board</span></h2>
+      <p class="section-desc">Click on your board to explore detailed curriculum, subjects and streams offered</p>
+    </div>
+
+    <div class="board-cards">
+      <!-- CBSE -->
+      <div class="board-card" data-board="cbse">
+        <div class="board-card-inner">
+          <div class="board-icon">🏫</div>
+          <div class="board-badge">Most Popular</div>
+          <h3>CBSE Board</h3>
+          <p>Central Board of Secondary Education – National curriculum with comprehensive coverage</p>
+          <div class="board-quick">
+            <span>📚 Class 3–12</span>
+            <span>🔬 3 Streams</span>
+          </div>
+          <button class="board-btn" onclick="openBoard('cbse')">Explore CBSE →</button>
+        </div>
+      </div>
+
+      <!-- ICSE -->
+      <div class="board-card" data-board="icse">
+        <div class="board-card-inner">
+          <div class="board-icon">📘</div>
+          <h3>ICSE Board</h3>
+          <p>Indian Certificate of Secondary Education – Internationally recognised curriculum</p>
+          <div class="board-quick">
+            <span>📚 Class 3–10</span>
+            <span>🌍 Global Scope</span>
+          </div>
+          <button class="board-btn" onclick="openBoard('icse')">Explore ICSE →</button>
+        </div>
+      </div>
+
+      <!-- ISC -->
+      <div class="board-card" data-board="isc">
+        <div class="board-card-inner">
+          <div class="board-icon">🎓</div>
+          <div class="board-badge new-badge">Senior Sec.</div>
+          <h3>ISC Board</h3>
+          <p>Indian School Certificate – Advanced senior secondary for Class 11 & 12</p>
+          <div class="board-quick">
+            <span>📚 Class 11–12</span>
+            <span>🔬 3 Streams</span>
+          </div>
+          <button class="board-btn" onclick="openBoard('isc')">Explore ISC →</button>
+        </div>
+      </div>
+
+      <!-- UP Board -->
+      <div class="board-card" data-board="up">
+        <div class="board-card-inner">
+          <div class="board-icon">🏛️</div>
+          <h3>UP Board</h3>
+          <p>Uttar Pradesh Madhyamik Shiksha Parishad – State curriculum with regional focus</p>
+          <div class="board-quick">
+            <span>📚 Class 3–12</span>
+            <span>🏠 State Board</span>
+          </div>
+          <button class="board-btn" onclick="openBoard('up')">Explore UP Board →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Board Detail Modal -->
+  <div class="modal-overlay" id="boardModal">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" onclick="closeBoard()">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!--  FEATURES  -->
+
+
+
+  <section class="features-section">
+
+    <div>
+       <h2 class="section-title" style="text-align: center;" > Why Choose us!</h2>
+
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <span class="feat-icon">👨‍🏫</span>
+        <h4>Expert Faculty</h4>
+        <p>Highly qualified teachers with experience in their respective subjects</p>
+      </div>
+      <div class="feature-item">
+        <span class="feat-icon">📝</span>
+        <h4>Regular Tests</h4>
+        <p>Weekly assessments, mock tests and previous year paper practice for thorough preparation</p>
+      </div>
+      <div class="feature-item">
+        <span class="feat-icon">📱</span>
+        <h4>Study Material</h4>
+        <p>Comprehensive notes, worksheets and digital resources provided to all students</p>
+      </div>
+      <div class="feature-item">
+        <span class="feat-icon">🤝</span>
+        <h4>Personal Attention</h4>
+        <p>Small batch sizes ensure every student gets individual attention and guidance</p>
+      </div>
+      <div class="feature-item">
+        <span class="feat-icon">🏆</span>
+        <h4>Proven Results</h4>
+        <p>Consistent track record of students achieving top ranks in board examinations</p>
+      </div>
+      <div class="feature-item">
+        <span class="feat-icon">📞</span>
+        <h4>Parent Updates</h4>
+        <p>Regular parent-teacher meetings and progress updates via WhatsApp and calls</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GALLERY ═══════════════════ -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <span class="section-eyebrow">📸 Our Moments</span>
+      <h2 class="section-title">Photo <span class="highlight">Gallery</span></h2>
+      <p class="section-desc">Glimpses at Him Classes – achievements, events and learning moments</p>
+    </div>
+
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="events">Events</button> 
+      <button class="filter-btn" data-filter="results">Results</button>
+      <button class="filter-btn" data-filter="classroom">Classroom</button>
+      <button class="filter-btn" data-filter="activities">Activities</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Row 1 -->
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder">
+          <img src="holi 11.jpeg" width="200px" alt="holi">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item gallery-large" data-category="results">
+        <div class="gallery-placeholder">
+          <span><img src="icse result.jpeg" alt="Top Results"></span>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="classroom">
+        <div class="gallery-placeholder">
+          <img src="WhatsApp Image 2026-06-13 at 5.16.30 PM (3).jpeg" alt="Classroom">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+       <div class="gallery-item" data-category="classroom">
+        <div class="gallery-placeholder">
+          <img src="class 222.png" alt="Classroom">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+       <div class="gallery-item" data-category="classroom">
+        <div class="gallery-placeholder">
+          <img src="class11.png" alt="Classroom">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+       <div class="gallery-item" data-category="classroom">
+        <div class="gallery-placeholder">
+          <img src="chote bache class.jpeg" alt="Classroom">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+       <div class="gallery-item" data-category="classroom">
+        <div class="gallery-placeholder">
+          <img src="simran moneyplant.jpeg" alt="Classroom">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="activities">
+        <div class="gallery-placeholder">
+          <img src="activity.jpeg" alt="Activity">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+            <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder">
+          <img src="event 1.jpeg" width="200px" alt="event1">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item gallery-large" data-category="results">
+        <div class="gallery-placeholder">
+          <span><img src="top result.png" alt="Top Results"></span>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="classroom">
+        <div class="gallery-placeholder">
+          <img src="old batch.jpeg" alt="Classroom">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="activities">
+        <div class="gallery-placeholder">
+          <img src="activity1.jpeg" alt="Activity">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="activities">
+        <div class="gallery-placeholder">
+          <img src="activity 2.jpeg" alt="Activity">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div><div class="gallery-item" data-category="activities">
+        <div class="gallery-placeholder">
+          <img src="activity 3.jpeg" alt="Activity">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div><div class="gallery-item" data-category="activities">
+        <div class="gallery-placeholder">
+          <img src="activity 4.png" alt="Activity">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <!-- Row 2 -->
+      <div class="gallery-item gallery-tall" data-category="results">
+        <div class="gallery-placeholder">
+          <img src="top ranker.jpg  " alt="Award">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="classroom  ">
+        <div class="gallery-placeholder">
+          <span class="placeholder-icon"></span>
+          <img src="class test.jpeg" alt="coaching img">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder">
+          <img src="celebration.jpg" alt="Event Photo 2">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item gallery-large" data-category="activities">
+        <div class="gallery-placeholder">
+          <span class="placeholder-icon"></span>
+          <span class="placeholder-label">trip</span>
+          <img src="trip.jpg" alt="trip">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <!-- Row 3 -->
+      <div class="gallery-item" data-category="classroom">
+        <div class="gallery-placeholder">
+          <span class="placeholder-label">Digital Class</span>
+          <img src="digital class.jpg" alt="Digital Class">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="events">
+        <div class="gallery-placeholder">
+          <span class="placeholder-icon"></span>
+          <span class="placeholder-label">Seminar</span>
+          <img src="seminar.jpeg" alt="Seminar">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="results">
+        <div class="gallery-placeholder">
+          <span class="placeholder-icon"></span>
+          <span class="placeholder-label">Result Chart</span>
+          <img src="top result.png" alt="Result Char">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+      <div class="gallery-item" data-category="activities">
+        <div class="gallery-placeholder">
+          <span class="placeholder-icon"></span>
+          <img src="9th celebraton.png" alt="celebration">
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="notes-section" id="notes"> 
+
+  <div class="notes-header">
+
+  </div>
+
+
+
+
+
+    <div class="notes-title">Notes / Worksheet</div>
+
+    <div class="class-list">
+       <div class="class-row">
+        <span class="class-name">Class 3rd to 5th</span>
+        <a class="view-btn" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSK22EUuAplysb8MIei4m4xq7CHG0byXpmCTMT-a-UCtZKI9QWE6cyI1SRCu-QvnmK39ghB74Rad30D/pubhtml" target="_blank">View Notes</a>
+      </div>
+
+
+      <div class="class-row"> 
+        <span class="class-name">Class 6th to 8th</span>
+        <a class="view-btn" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQhxH_T9u6LBorhXZnAdLHeNhZ_Kn2rM7nLLam78huPHC3ZtjSm67w_a23pbYQE-KeVqLqPZ1uCly4o/pubhtml" target="_blank">View Notes</a>
+      </div>
+
+      <div class="class-row">
+        <span class="class-name">Class 9th and 10th</span>
+        <a class="view-btn" href="https://docs.google.com/spreadsheets/d/1f4Omc7mdgQ8_AaAutaUncOJi6hNvjvHs5reX2KoGcNc/edit?pli=1&gid=2034367070#gid=2034367070" target="_blank">View Notes</a>
+      </div>
+
+      <div class="class-row">
+        <span class="class-name">Class 11th and 12th</span>
+        <a class="view-btn" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTiJHsMuz39pdz5Q5EpejEjbgKK_AOhQ7eDCeL5ovwh0-QRV7h6QUsmBjEM3JW_aawaeUPpbySyEHYP/pubhtml" target="_blank">View Notes</a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <span class="section-eyebrow">🏫 About Us</span>
+        <h2 class="about-title">Building <span class="highlight">Extraordinary</span><br/>Students Since 2019</h2>
+        <p class="about-text">
+          Him Classes is a premier coaching institute based in Raebareli, Uttar Pradesh, dedicated to nurturing academic excellence across all major educational boards. We believe every student possesses extraordinary potential — our mission is to unlock it.
+        </p>
+        <p class="about-text">
+          Our institute offers structured coaching for students from Class 3 to Class 12 across CBSE, ICSE, ISC, and UP Board curricula, with a focus on conceptual clarity, regular practice, and personalised mentorship.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-chip">✅ Experienced Faculty</div>
+          <div class="highlight-chip">✅ Modern Classrooms</div>
+          <div class="highlight-chip">✅ AC Facility</div>
+          <div class="highlight-chip">✅ Digital Learning</div>
+        </div>
+        <div class="about-social">
+          <a href="https://www.instagram.com/him_classes" class="social-btn insta" target="_blank">📸 Instagram</a>
+          <a href="https://www.facebook.com/him.classes" class="social-btn fb" target="_blank">👍 Facebook</a>
+          <a href="https://wa.me/917607404756?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20coaching%20classes." class="social-btn wa">💬 WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="about-info-cards">
+          <div class="info-card">
+            <span class="info-icon">📍</span>
+            <div>
+              <h4>Address</h4>
+              <p>Him Classes,In front of kendriya vidyalaya,Gorabazar, civil lines<br/>Raebareli, Uttar Pradesh – 229001</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">📞</span>
+            <div>
+              <h4>Contact</h4>
+              <p>+91 91202 36463<br/>+91 76074 04756</p>
+            </div>
+          </div> 
+          <div class="info-card">
+            <span class="info-icon">🕐</span>
+            <div>
+              <h4>Timings</h4>
+              <p>Mon – Sat: 9:00 AM – 8:00 PM<br/>Sunday: By Appointment</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <p>himclasses08@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="admission-cta-card">
+          <div class="cta-icon">🎓</div>
+          <h3>Admissions Open</h3>
+          <p>Session 2026-27 | Limited Seats Available</p>
+          <ul class="cta-list">
+            <li>✔ It is mandatory for students to study all available subjects.</li>
+          </ul>
+          <a href="tel:+91 9120236463" class="btn-primary cta-call">📞 Call to Enroll</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <!-- footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span><img src="IMG_20251217_131036.png" width="50px"></span>
+          <div>
+            <span class="brand-him">HIM</span>
+            <span class="brand-classes">CLASSES</span>
+          </div>
+        </div>
+        <p>Makes You Extraordinary</p>
+        <p class="footer-tagline">Empowering students across Raebareli with quality education and dedicated mentorship since 2019.</p>
+      </div>
+      <div class="footer-links-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#boards">Boards</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>Boards</h5>
+        <ul>
+          <li><a href="#boards" onclick="openBoard('cbse')">CBSE Board</a></li>
+          <li><a href="#boards" onclick="openBoard('icse')">ICSE Board</a></li>
+          <li><a href="#boards" onclick="openBoard('isc')">ISC Board</a></li>
+          <li><a href="#boards" onclick="openBoard('up')">UP Board</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>Connect With Us</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/him_classes/">📸 Instagram</a></li>
+          <li><a href="https://www.facebook.com/him.classes">👍 Facebook</a></li>
+          <li><a href="https://wa.me/917607404756?text=Hello%2C%20I%20want%20to%20know%20more%20about%20your%20coaching%20classes.">💬 WhatsApp</a></li>
+          <li><a href="tel:+917607404756">📞 Call Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Him Classes, Raebareli. All rights reserved.</p>
+      <p>Made with efforts for extraordinary students</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
